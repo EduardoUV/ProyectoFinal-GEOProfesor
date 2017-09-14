@@ -1,0 +1,76 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GEOProfesor"
+        android:textAlignment="center"
+        android:textColor="#0182ec"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="283dp"
+        android:layout_height="167dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="1.5dp"
+        android:layout_weight="0.09"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+
+
+         <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+             <Button
+                 android:id="@+id/boton1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="ActividadSig"
+                 android:text="ACEPTAR"
+                 />
+
+             <Button
+                 android:id="@+id/boton2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="CerrarApp"
+                 android:text="CANCELAR"
+                 />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/CAJA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="OPCION ELEGIDA..." />
+
+</LinearLayout>
+
+</ScrollView>
